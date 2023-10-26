@@ -19,6 +19,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 
+// Scss
+import './styles/main.scss'
 
 const app = createApp(App)
 

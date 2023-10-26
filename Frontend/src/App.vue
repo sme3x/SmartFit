@@ -13,6 +13,16 @@ import HelloWorld from './components/HelloWorld.vue'
       <!-- This is how you use icons -->
       <v-icon icon="fas fa-home" /><br><br>
       <font-awesome-icon :icon="['fas', 'home']" /><br><br>
+
+      <div class="test1">
+        test1
+        <div class="test2">
+          test2
+          <div class="test3">
+            test3
+          </div>
+        </div>
+      </div>
   <template>
   <v-icon icon="fas fa-home" />
 </template>
@@ -29,7 +39,14 @@ import HelloWorld from './components/HelloWorld.vue'
   <RouterView />
 </template>
 
-<style scoped>
+<style lang="scss">
+.test1{
+  background: red;
+  .test2 {
+    background: blue;
+  }
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
