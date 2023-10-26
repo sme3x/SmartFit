@@ -10,6 +10,15 @@ import HelloWorld from './components/HelloWorld.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
+      <!-- This is how you use icons -->
+      <v-icon icon="fas fa-home" /><br><br>
+      <font-awesome-icon :icon="['fas', 'home']" /><br><br>
+  <template>
+  <v-icon icon="fas fa-home" />
+</template>
+
+
+
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
