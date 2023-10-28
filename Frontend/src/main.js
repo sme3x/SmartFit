@@ -15,11 +15,14 @@ import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
 // Fontawesome icons
-import { aliases, fa } from 'vuetify/iconsets/fa-svg'
+import { fa } from "vuetify/iconsets/fa";
+import { aliases, mdi } from "vuetify/lib/iconsets/mdi";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
+import "@mdi/font/css/materialdesignicons.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 // i18n translations
 import { createI18n } from 'vue-i18n';
@@ -40,15 +43,16 @@ library.add(far) // Include needed regular icons
 
 
 const vuetify = createVuetify({
-  components,
-  directives,
   icons: {
-    defaultSet: 'fa',
+    defaultSet: "mdi",
     aliases,
     sets: {
+      mdi,
       fa,
     },
   },
+  components,
+  directives,
 })
 
 app.use(createPinia())
