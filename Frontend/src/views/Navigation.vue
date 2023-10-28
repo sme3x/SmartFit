@@ -20,7 +20,7 @@
     </v-system-bar> -->
     <v-app-bar color="blue">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-app-bar-title>Application</v-app-bar-title>
+      <v-app-bar-title>{{ this.$t('title') }}</v-app-bar-title>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer">

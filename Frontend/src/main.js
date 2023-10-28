@@ -21,6 +21,17 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 
+// i18n translations
+import { createI18n } from 'vue-i18n';
+import en from '@/assets/lang/en.json'
+
+const i18n = createI18n({
+  locale: 'en',
+  messages: {
+    en: en,
+  },
+});
+
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon) // Register component globally
@@ -42,6 +53,7 @@ const vuetify = createVuetify({
 
 app.use(createPinia())
 app.use(vuetify)
+app.use(i18n)
 app.use(router)
 
 app.mount('#app')
