@@ -1,5 +1,7 @@
-import './assets/main.css'
+// Scss
+import './assets/styles/main.scss'
 
+// App
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -18,9 +20,6 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
-
-// Scss
-import './styles/main.scss'
 
 const app = createApp(App)
 
