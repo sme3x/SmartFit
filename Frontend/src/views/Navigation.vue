@@ -1,14 +1,23 @@
-<script setup>
-  import { ref } from 'vue'
-
-  const links = [
-    ['mdi-inbox-arrow-down', 'Inbox'],
-    ['mdi-send', 'Send'],
-    ['mdi-delete', 'Trash'],
-    ['mdi-alert-octagon', 'Spam'],
-  ]
-
-  const drawer = ref(null)
+<script>
+export default {
+  data() {
+    return {
+      drawer: null,
+      links: [],
+    };
+  },
+  created() {
+    this.links = this.generateLinks();
+  },
+  methods: {
+    generateLinks() {
+      return [
+        ['mdi-home', this.$t('navigation.home')],
+        ['mdi-chart-line', this.$t('navigation.statistics')]
+      ];
+    },
+  },
+};
 </script>
 
 <template>

@@ -1,3 +1,7 @@
 {
-  "title": "Smart Fit"
+  "title": "Smart Fit",
+  "navigation": {
+    "home": "Home",
+    "statistics": "Statistics"
+  }
 }
