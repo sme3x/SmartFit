@@ -1,3 +1,12 @@
+# Backend
+
+## Install
+
+Windows: You have to run next command in WSL2 terminal from root project.
+```
+./vendor/bin/sail up
+```
+
 # Frontend
 
 ## Install
