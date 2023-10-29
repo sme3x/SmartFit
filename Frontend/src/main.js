@@ -13,6 +13,7 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import { VDataTable } from "vuetify/labs/VDataTable";
 
 // Fontawesome icons
 import { fa } from "vuetify/iconsets/fa";
@@ -51,7 +52,10 @@ const vuetify = createVuetify({
       fa,
     },
   },
-  components,
+  components: {
+    ...components,
+    VDataTable,
+  },
   directives,
 })
 
