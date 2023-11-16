@@ -1,15 +1,8 @@
-
 <script>
-    import axios from "axios"
-
-    export default {
-      async created () {
-        let res = await axios.get('https://localhost:8000/api/users')
-        cconsole.log(res);
-      },
-      data () {
-        return {
-          itemsPerPage: 5,
+export default {
+  data() {
+    return {
+      itemsPerPage: 5,
           headers: [
             {
               title: 'Dessert (100g serving)',
@@ -105,19 +98,22 @@
               iron: '22',
             },
           ],
-        }
-      },
-  }
+    };
+  },
+};
 </script>
 
 <template>
-  <div class="px-4">
-    <v-data-table
+  <v-sheet class="mx-auto px-4">
+    <h3 class="py-4">{{ $t('control_panel.user_table.title') }}</h3>
+    <div>
+      <v-data-table
       v-model:items-per-page="itemsPerPage"
       :headers="headers"
       :items="desserts"
       item-value="name"
       class="elevation-1"
-    ></v-data-table>
-  </div>
+      ></v-data-table>
+    </div>
+  </v-sheet>
 </template>

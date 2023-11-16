@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Main from '../views/Main.vue'
+import ControlPanel from '../views/ControlPanel.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Main
+    },
+    {
+      path: '/control-panel',
+      name: 'control-panel',
+      component: ControlPanel
     },
     {
       path: '/about',

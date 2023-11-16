@@ -8,10 +8,8 @@
     <Navigation />
 
     <v-main>
-      <v-container
-        class="py-8 px-6"
-        fluid
-      >
+      <!-- class="py-8 px-6" -->
+      <v-container fluid class="py-8 px-0">
         <RouterView />
       </v-container>
     </v-main>

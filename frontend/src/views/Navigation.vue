@@ -12,8 +12,9 @@ export default {
   methods: {
     generateLinks() {
       return [
-        ['mdi-home', this.$t('navigation.home')],
-        ['mdi-chart-line', this.$t('navigation.statistics')]
+        ['mdi-home', this.$t('navigation.home'), 'home'],
+        ['mdi-chart-line', this.$t('navigation.statistics')],
+        ['mdi-crown ', this.$t('navigation.control_panel'), 'control-panel']
       ];
     },
   },
@@ -50,11 +51,11 @@ export default {
 
     <v-list>
       <v-list-item
-        v-for="[icon, text] in links"
+        v-for="[icon, text, pathName] in links"
         :key="icon"
         :prepend-icon="icon"
         :title="text"
-        link
+        @click.native="$router.push({ name: pathName })"
       ></v-list-item>
     </v-list>
   </v-navigation-drawer>
