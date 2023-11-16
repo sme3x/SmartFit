@@ -41,7 +41,7 @@ this.$t('title')
 ```
 
 ## Use icons
-
+[Icons](https://pictogrammers.com/library/mdi/)
 ```
 <v-icon icon="mdi-domain" />
 <font-awesome-icon :icon="['fas', 'home']" />
