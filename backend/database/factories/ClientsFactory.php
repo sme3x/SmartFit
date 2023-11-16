@@ -19,8 +19,8 @@ class ClientsFactory extends Factory
     {
         $startDate = now();
         return [
-            'firstName' => fake()->name(),
-            'lastName' => fake()->lastName(),
+            'first_name' => fake()->name(),
+            'last_name' => fake()->lastName(),
             'active' =>  fake()->boolean(50),
             'note' => fake()->text(100),
             'visit_count' => fake()->numberBetween(0, 100),

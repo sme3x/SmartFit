@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->string('firstName');
-            $table->string('lastName')->nullable();
+            $table->string('first_name');
+            $table->string('last_name')->nullable();
             $table->boolean('active')->nullable()->default(false);
             $table->string('note')->nullable();
             $table->integer('visit_count');
