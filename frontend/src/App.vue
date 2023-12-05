@@ -5,6 +5,7 @@
 
 <template>
   <v-app id="inspire">
+    <!-- This is where login comes -->
     <Navigation />
 
     <v-main>

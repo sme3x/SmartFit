@@ -105,7 +105,12 @@ export default {
 
 <template>
   <v-sheet class="mx-auto px-4">
-    <h3 class="py-4">{{ $t('control_panel.user_table.title') }}</h3>
+    <div class="d-flex flex-wrap justify-space-between">
+      <h2 class="py-4">{{ $t('control_panel.user_table.title') }}</h2>
+      <v-btn color="blue" @click="$emit('openUserForm')">
+        {{ $t('add') }} {{ $t('control_panel.user_table.user') }}
+      </v-btn>
+    </div>
     <div>
       <v-data-table
       v-model:items-per-page="itemsPerPage"

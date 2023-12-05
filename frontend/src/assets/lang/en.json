@@ -14,7 +14,11 @@
       "password_check": "Repeat your password"
     },
     "user_table": {
+      "user": "User",
       "title": "User table"
     }
-  }
+  },
+
+
+  "add": "Add"
 }
