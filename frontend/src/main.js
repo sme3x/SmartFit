@@ -1,5 +1,7 @@
 // Scss
 import './assets/styles/main.scss'
+// Axios
+import "@/plugins/axios.js"
 
 // App
 import { createApp } from 'vue'
